@@ -112,6 +112,42 @@ const lendingPools = [
     target: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
     params: ["0xBE3F88E18BE3944FdDa830695228ADBB82fA125F"]
   },
+  {  // oneICHI
+    target: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    params: ["0x4db2c02831c9ac305FF9311Eb661f80f1dF61e07"]
+  },
+  { // oneICHI
+    target: "0x903bEF1736CDdf2A537176cf3C64579C3867A881",
+    params: ["0x4db2c02831c9ac305FF9311Eb661f80f1dF61e07"]
+  },
+  {  // oneGIV
+    target: "0x900dB999074d9277c5DA2A43F252D74366230DA0",
+    params: ["0x17e6BA2519B4d15199B6529dB340910Ae031b1B0"]
+  },
+  { // oneGIV
+    target: "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+    params: ["0x17e6BA2519B4d15199B6529dB340910Ae031b1B0"]
+  },
+  {  // oneOJA
+    target: "0xbB9E5DB6F357BB4dF35E8B90B37b8A3F33031D86",
+    params: ["0xbB9E5DB6F357BB4dF35E8B90B37b8A3F33031D86"]
+  },
+  { // oneOJA
+    target: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    params: ["0xbB9E5DB6F357BB4dF35E8B90B37b8A3F33031D86"]
+  },
+  {  // oneWING
+    target: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    params: ["0x5047fc5C9D7c49Ab22e390d13646a6A3a2476eff"]
+  },
+  { // oneWING
+    target: "0xDb0f18081b505A7DE20B18ac41856BCB4Ba86A1a",
+    params: ["0x5047fc5C9D7c49Ab22e390d13646a6A3a2476eff"]
+  },
+  { // BootUSD
+    target: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    params: ["0x78a3B2f1e7eec1073088ea4a193618743F81cEf8"]
+  },
 ]
 
 const strategies = [
@@ -288,7 +324,7 @@ async function tvl(timestamp, block) {
     ['0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', '0xac20007A5CBDA40d8E16df26bAD89E8738404691'], 
     
     // bootUSD
-    ['0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd', '0x4ed128f3087DB2D9F6Ea0f1dca3b7FC716EC256C'], 
+    ['0x78a3B2f1e7eec1073088ea4a193618743F81cEf8', '0x4ed128f3087DB2D9F6Ea0f1dca3b7FC716EC256C'], 
     
   )
   const balances = await sumTokens2({ tokensAndOwners: toa, block, chain, blacklistedTokens })
